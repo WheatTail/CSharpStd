@@ -26,7 +26,7 @@ namespace testLoginForm
             ключа в нужной секции*/
         {
             var returnValue = new StringBuilder(255);
-            GetPrivateProfileString(section, key, "", returnValue, 255, pathToIni);
+            GetPrivateProfileString(section, key, "1", returnValue, 255, pathToIni);
             return returnValue.ToString();
         }
         public void writeToIni(string section, string key, string value) //Пишем значение ключа в секцию
